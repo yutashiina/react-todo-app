@@ -56,6 +56,7 @@ const App: React.FC = () => {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>ToDoリスト</h1>
+      <p><a href="https://github.com/yutashiina/react-todo-app.git" target="_blank">ソースコード</a></p>
       <TodoInput onAdd={addTodo} />
       <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} onEdit={editTodo} />
       <TodoHistoryByDate todos={todos} onDelete={deleteHistory} />
